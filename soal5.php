@@ -7,7 +7,7 @@
         $result++;
       }
     }
-    return 'result = '.$result;
+    return "found ($result) of ($find) in ($letters)";
   }
 
   echo countSameLetters('alfian','a');

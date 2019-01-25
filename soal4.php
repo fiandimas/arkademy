@@ -5,7 +5,7 @@
     for($i=$people - 1;$i>=1;$i--){
       $result = $result + $i;
     }
-    return 'result : '.$result;
+    return "result : $result handshake from $people people";
   }
 
-  echo countHandShake(6);
+  echo countHandShake(4);

@@ -16,7 +16,6 @@
        )
       ),
       'freeShiping' => false
-      
     );
 
     return json_encode($data);

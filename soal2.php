@@ -16,6 +16,6 @@
     return $result;
   }
 
-  echo verifUsername('dimas');
+  echo verifUsername('DIMAS');
 
   
