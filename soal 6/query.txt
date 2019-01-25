@@ -1,0 +1,1 @@
+SELECT product_categories.id,product_categories.name, COUNT(product_categories.id) AS Jumlah_product FROM `product_categories` INNER JOIN products ON product_categories.id=products.category_id GROUP BY product_categories.id
