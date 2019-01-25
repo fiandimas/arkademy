@@ -1,1 +1,1 @@
-"# arkademy" 
+Arkademy
