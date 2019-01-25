@@ -8,4 +8,4 @@
     return "result : $result handshake from $people people";
   }
 
-  echo countHandShake(4);
+  echo countHandShake(isset($_GET['people']) ? $_GET['people'] : 10);

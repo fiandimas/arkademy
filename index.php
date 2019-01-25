@@ -27,7 +27,17 @@
       Hasil Query : <img src="preview/query_result.png"><br><br><br>
       Query : <i><b>SELECT product_categories.id,product_categories.name, COUNT(product_categories.id) AS Jumlah_product FROM product_categories INNER JOIN products ON product_categories.id=products.category_id GROUP BY product_categories.id</b></i><br><br><br>
     <?php 
-      }else if($preview < 8){
+      }else if($preview == 3){
+        echo "<img src='preview/soal $preview.png'><br><br>";
+        echo "<h4 style='text-align:center'><a href='http://localhost/arkademy/soal$preview.php?deret=7' target='_blank'>Go To Application</a></h4>";
+      }else if($preview == 4){
+        echo "<img src='preview/soal $preview.png'><br><br>";
+        echo "<h4 style='text-align:center'><a href='http://localhost/arkademy/soal$preview.php?people=6' target='_blank'>Go To Application</a></h4>";
+      }else if($preview == 5){
+        echo "<img src='preview/soal $preview.png'><br><br>";
+        echo "<h4 style='text-align:center'><a href='http://localhost/arkademy/soal$preview.php?text=dimas&find=d' target='_blank'>Go To Application</a></h4>";
+      }
+      else if($preview < 8){
         echo "<img src='preview/soal $preview.png'><br><br>";
         echo "<h4 style='text-align:center'><a href='http://localhost/arkademy/soal$preview.php' target='_blank'>Go To Application</a></h4>";
       }

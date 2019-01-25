@@ -13,4 +13,4 @@
     }
   }
 
-  triangle(10);
+  triangle(isset($_GET['deret']) ? $_GET['deret'] : 10);

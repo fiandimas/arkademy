@@ -1,11 +1,11 @@
 <?php
 
-  function countSameLetters($letters,$find){
+  function countSameLetters($text,$find){
     $result = '';
     $counter = 1;
     for($i=0;$i<$counter;$i++){
-      if(@$letters[$i] != ""){
-        if(@$letters[$i] == $find){
+      if(@$text[$i] != ""){
+        if(@$text[$i] == $find){
           $result++;
         }
         $counter++;
@@ -13,7 +13,8 @@
         break;
       }
     }
-    return "found ($result) of ($find) in ($letters)";
+    return "found ($result) of ($find) in ($text)";
   }
 
-  echo countSameLetters('alfian','a');
+  echo countSameLetters(isset($_GET['text']) ? $_GET['text'] : 'alfian',
+  isset($_GET['find']) ? $_GET['find'] : 'a');
